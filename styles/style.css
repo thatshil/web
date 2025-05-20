@@ -122,7 +122,7 @@ section {
 /*! home  start*/
 .home {
     min-height: 100vh;
-    background:
+    background: url("../images/web.png")
     no-repeat;
     background-size:cover;
     background-position: center;
