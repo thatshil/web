@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kayıt Onayı</title>
+</head>
+<body style="background-color: #b30900; color: white; font-family: Arial; text-align: center; padding: 2rem;">
+
+  <script>
+    var degerler = new URLSearchParams(window.location.search);
+
+    var ad = degerler.get('isim');
+    var eposta = degerler.get('eposta');
+    var telefon = degerler.get('tel');
+    var yas = degerler.get('yas');
+    var cinsiyet = degerler.get('cinsiyet');
+
+    document.write("<h2>Kaydınız Tamamlandı!</h2>");
+    document.write("<h3>Perde Arkasına Hoşgeldiniz</h3>");
+
+    document.write("<table border='1' cellspacing='0' cellpadding='10' style='margin: 2rem auto; background-color: white; color: black;'>");
+    document.write("<tr><th>Bilgi</th><th>Değer</th></tr>");
+    document.write("<tr><td>Adınız Soyadınız</td><td>" + (ad ?? '-') + "</td></tr>");
+    document.write("<tr><td>E-posta</td><td>" + (eposta ?? '-') + "</td></tr>");
+    document.write("<tr><td>Telefon</td><td>" + (telefon ?? '-') + "</td></tr>");
+    document.write("<tr><td>Yaş</td><td>" + (yas ?? '-') + "</td></tr>");
+    document.write("<tr><td>Cinsiyet</td><td>" + (cinsiyet == 'K' ? 'Kadın' : (cinsiyet == 'E' ? 'Erkek' : '-')) + "</td></tr>");
+    document.write("</table>");
+  </script>
+
+  <a href="form.html" style="color: lightblue; font-size: 1.2rem;">Yeni Kayıt Oluşturun</a>
+  <br><br>
+  <a href="index.html" style="font-size: 1.5rem; color: white; background-color: #b30900; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+  Anasayfa'ya Dön
+</a>
+
+</body>
+</html>   
+

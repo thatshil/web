@@ -1,0 +1,615 @@
+:root {
+    --main-color:#000000;
+    --black-color:#f7f6f6;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+}
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+       
+
+
+}
+
+/*! base html codes */
+html{
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #fff;
+}
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: var(--black-color);
+}
+
+body{
+    background-color: var(--main-color);
+    
+}
+
+section {
+    padding: 3.5rem 2%;
+}
+
+.btn{
+    margin-top: 1 rem;
+    display:inline-block;
+    padding: 2 rem 3.75rem;
+    border-radius: 30 rem;
+    font-size: 1.7rem;
+    color: #000000;
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+.heading {
+    color:#fff;
+    text-transform: uppercase;
+    font-size:4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+ .heading span {
+    text-transform: uppercase;
+ }
+
+ search-input{
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+
+ }
+/*! header  start */
+.header .logo img {
+    height:9rem ;
+}
+
+.header {
+    background-color: #b60000;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin: 2rem 7%;
+    border-radius: 40rem;
+    box-shadow: 0px 0px 17px -2px rgb(252, 252, 252);
+    position: sticky;
+    top:0;
+    z-index: 1000;
+
+}
+.header .navbar a {
+    margin:0 1rem;
+    font-size:1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+#menu-btn {
+  display:none;
+}
+/*! header  end */
+
+/*! home  start*/
+.home {
+    min-height: 100vh;
+    background: url(../../perdearkası1.png)
+    no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+ 
+
+}
+
+.home .content{
+    max-width: 60rem;
+
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    color:#fff;
+}
+
+.home .content pre {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1 rem 0;
+    color:#fff;
+
+}
+
+
+/*! home end*/
+
+
+
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Kutular arası boşluk */
+  justify-content: center;
+}
+
+.box {
+  width: 300px; /* Tüm kutular aynı boyutta */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.03);
+}
+
+.box-head img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.menu-category {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.box-bottom {
+  padding: 10px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/*! animasyon end*/
+
+/*! footer start */
+.footer {
+    background-color: var(--black-color);
+    text-align: center;
+   
+ 
+}
+
+.footer search {
+    display:flex;
+    justify-content:center;
+
+}
+
+.footer .search .search-input{
+    width: 30rem;
+    
+ 
+}
+.footer .search .btn {
+    background-color: var(--main-color);
+    padding:1 rem 2rem ;
+    margin-left: 1 rem;
+
+ 
+
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-direction: wrap;
+    gap: 1rem;
+    border: var(--border);
+
+ 
+}
+
+.footer .links a {
+    background-color: var(--main-color);
+    padding: 0.7rem 2rem;
+    color:#fff;
+    font-size: 2rem;
+    
+ 
+
+}
+
+.footer .links a hover {
+
+    background-color: var(--black-color);
+    opacity: 0.7;
+    
+
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Sayfanın en az tam ekran yüksekliğinde olmasını sağlar */
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #b30900; 
+  color: white;
+}
+
+
+.heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2rem 0 1rem 8rem;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.heading span {
+  color: rgb(255, 255, 255);
+}
+
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 8rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+
+.about .image img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.about .content {
+  max-width: 650px;
+}
+
+.about .content h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.about .content p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+}
+
+
+.about .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  border-radius: 50px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.about .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.ortali-resim {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.festival-tarihleri {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin-top: 2rem;
+}
+
+.festival-tarihleri ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 1rem auto;
+  display: inline-block; 
+  text-align: left; 
+}
+
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    #sonuc {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    /*! responsive start */
+/* RESPONSIVE TASARIM (max 768px için) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .buttons {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .box-container {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .box {
+    width: 90% !important;
+    max-width: 400px;
+  }
+
+  .box-head img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .row .image,
+  .about .row .content {
+    width: 90%;
+  }
+
+  .footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer .btn-primary {
+    width: 100%;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+  }
+
+  form p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .home .content h3 {
+    font-size: 1.5rem;
+  }
+
+  .home .content pre {
+    font-size: 1rem;
+    white-space: pre-wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  /* NAVBAR ve BUTONLAR */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .buttons button {
+    font-size: 1.2rem;
+  }
+
+  /* KUTULAR */
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 1.5rem;
+  }
+
+  .box-head img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* FORM ELEMANLARI */
+  form p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  form label {
+    margin-bottom: 4px;
+    font-size: 1rem;
+  }
+
+  /* TABLO YAPISI */
+  table {
+    width: 100% !important;
+    overflow-x: auto;
+    display: block;
+  }
+
+  /* HOME / CONTENT */
+  .home .content h3 {
+    font-size: 1.4rem;
+  }
+
+  .home .content pre {
+    font-size: 1rem;
+    white-space: pre-wrap;
+    padding: 0 1rem;
+  }
+
+  /* FOOTER */
+  .footer .search {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .footer .search-input,
+  .footer .btn-primary {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .footer .links a {
+    font-size: 1.1rem;
+  }
+
+  /* RESPONSIVE GÖRSELLER */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ortali-resim {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* GENEL METİNLER */
+  .center,
+  .festival-tarihleri {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .festival-tarihleri ul {
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+
+   

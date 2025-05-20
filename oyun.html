@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Film İsmi Tahmin Oyunu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    #sonuc {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 Film İsmini Tahmin Et!</h1>
+  <p>Harfler karışık: <strong id="karisikFilm"></strong></p>
+
+  <input type="text" id="tahmin" placeholder="Tahmininizi yazın">
+  <br>
+  <button id="kontrolBtn">Tahmini Kontrol Et</button>
+  <p id="sonuc"></p>
+
+  <script>
+    const filmler = ["inception", "avatar", "gladiator", "matrix", "joker", "interstellar"];
+    const secilenFilm = filmler[Math.floor(Math.random() * filmler.length)];
+    const karisik = secilenFilm.split("").sort(() => 0.5 - Math.random()).join("");
+
+    document.getElementById("karisikFilm").textContent = karisik;
+
+    document.getElementById("kontrolBtn").addEventListener("click", function () {
+      const giris = document.getElementById("tahmin").value.toLowerCase().trim();
+      const sonuc = document.getElementById("sonuc");
+
+      if (giris === secilenFilm) {
+        sonuc.innerHTML = "🎉 Doğru tahmin! Tebrikler!";
+        sonuc.style.color = "lightgreen";
+      } else {
+        sonuc.innerHTML = "❌ Yanlış tahmin, tekrar dene!";
+        sonuc.style.color = "orange";
+      }
+    });
+  </script>
+
+</body>
+</html>
